@@ -12,7 +12,7 @@ dependencies = [
 ]
 
 [project.scripts]
-eng = "eng:main"
+eng-convert = "cli.data_converter:main"
 
 [build-system]
 requires = ["hatchling"]
