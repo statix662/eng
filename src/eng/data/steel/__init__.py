@@ -1,29 +1,22 @@
-import importlib
 from pathlib import Path
-from eng.data.utils import load_data
+from ..utils import load_data
 
-steel_path = Path(__file__).parent
-# Find all python files (models) in this directory that are all uppercase
-model_files = [f for f in steel_path.glob('*.py') if f.name != '__init__.py' and f.stem == f.stem.upper()]
-__all__ = []
+from .CHS import CHS as CHS_wrapper
+from .PFC import PFC as PFC_wrapper
+from .SHS import SHS as SHS_wrapper
+from .UB import UB as UB_wrapper
+from .UC import UC as UC_wrapper
+from .WB import WB as WB_wrapper
+from .WC import WC as WC_wrapper
 
-for model_file in model_files:
-    model_name_upper = model_file.stem
-    
-    try:
-        module = importlib.import_module(f'.{model_name_upper}', __package__)
-        wrapper_model_class = getattr(module, model_name_upper)
-    except (ImportError, AttributeError) as e:
-        print(f"Could not load wrapper model for {model_name_upper}: {e}")
-        continue
+_data_path = Path(__file__).parent / "data"
 
-    json_path = steel_path / 'data' / f'{model_name_upper}.json'
-    
-    if json_path.exists():
-        var_name = model_name_upper
-        try:
-            data_wrapper_object = load_data(json_path, wrapper_model_class)
-            globals()[var_name] = data_wrapper_object
-            __all__.append(var_name)
-        except Exception as e:
-            print(f"Could not load data for {model_name_upper}: {e}")
+CHS = load_data(_data_path / "CHS.json", CHS_wrapper)
+PFC = load_data(_data_path / "PFC.json", PFC_wrapper)
+SHS = load_data(_data_path / "SHS.json", SHS_wrapper)
+UB = load_data(_data_path / "UB.json", UB_wrapper)
+UC = load_data(_data_path / "UC.json", UC_wrapper)
+WB = load_data(_data_path / "WB.json", WB_wrapper)
+WC = load_data(_data_path / "WC.json", WC_wrapper)
+
+__all__ = ['CHS', 'PFC', 'SHS', 'UB', 'UC', 'WB', 'WC']

@@ -1,39 +1,42 @@
 import json
 from pathlib import Path
-from typing import Type
-from pydantic import BaseModel
+from typing import Type, Any
+from dataclasses import fields, is_dataclass
 
-
-def load_data(json_path: Path, wrapper_model: Type[BaseModel]) -> BaseModel:
+def load_data(json_path: Path, wrapper_model: Type[Any]) -> Any:
     """
-    Loads data from a JSON file into a Pydantic wrapper model.
+    Loads data from a JSON file into a dataclass wrapper model.
+
+    This function handles dataclass wrappers where fields may use 'alias'
+    in their metadata to map to keys in the JSON file. It also assumes
+    that the values in the JSON are dictionaries that can be used to
+    instantiate the field types (e.g., a Pydantic model).
     """
     with json_path.open("r", encoding="utf-8") as f:
         raw_data = json.load(f)
 
-    return wrapper_model(**raw_data)
+    if not is_dataclass(wrapper_model):
+        try:
+            # Fallback for simple pydantic models or other types
+            return wrapper_model(**raw_data)
+        except TypeError:
+             raise TypeError(f"wrapper_model '{wrapper_model.__name__}' is not a dataclass and could not be instantiated.")
 
+    alias_map = {f.metadata['alias']: f.name for f in fields(wrapper_model) if 'alias' in f.metadata}
+    
+    init_kwargs = {}
+    for json_key, json_value in raw_data.items():
+        field_name = alias_map.get(json_key, json_key)
+        
+        # Get the type annotation for the field
+        field_type = wrapper_model.__annotations__.get(field_name)
+        
+        if field_type:
+            # Instantiate the field's type (e.g., a Pydantic model) with the value
+            init_kwargs[field_name] = field_type(**json_value)
+        else:
+            # This path is unlikely if models are generated correctly
+            # but as a fallback, just pass the value.
+            init_kwargs[field_name] = json_value
 
-### OLD VERSION ###
-# def load_data(
-#     json_path: Path, entry_model: Type[BaseModel], wrapper_model: Type[BaseModel]
-# ) -> BaseModel:
-#     """
-#     Load JSON data into a statically defined Pydantic wrapper model.
-#
-#     Args:
-#         json_path (Path): Path to the JSON file.
-#         entry_model (Type[BaseModel]): Model for individual entries.
-#         wrapper_model (Type[BaseModel]): Wrapper model with named fields.
-#
-#     Returns:
-#         BaseModel: An instance of the wrapper model populated with entry models.
-#     """
-#     with json_path.open("r", encoding="utf-8") as f:
-#         raw_data = json.load(f)
-#
-#     # Validate each entry using the entry model
-#     validated_data = {key: entry_model(**value) for key, value in raw_data.items()}
-#
-#     # Instantiate the wrapper model with validated entries
-#     return wrapper_model(**validated_data)
+    return wrapper_model(**init_kwargs)

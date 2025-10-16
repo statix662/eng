@@ -1,90 +1,72 @@
-from pydantic import BaseModel, Field
+from pydantic import Field
+from dataclasses import dataclass, field
+from .model.steel import Steel
 
-class SHS_base(BaseModel):
-    name: str
-    weight: float
-    d: float
-    bf: float
-    tf: float
-    Ag: float
-    Ix: float
-    Zx: float
-    Sx: float
-    rx: float
-    Iy: float
+class SHS_base(Steel):
     Zy: float
-    Sy: float
-    ry: float
-    J: float
-    Iw: float
-    fy: float
-    kf: float
-    compact_x: str
-    Zex: float
     compact_y: str
     Zey: float
 
+@dataclass
+class SHS:
+    _250x9_SHS: SHS_base = field(metadata={'alias': '250x9 SHS'})
+    _250x6_SHS: SHS_base = field(metadata={'alias': '250x6 SHS'})
+    _200x9_SHS: SHS_base = field(metadata={'alias': '200x9 SHS'})
+    _200x6_SHS: SHS_base = field(metadata={'alias': '200x6 SHS'})
+    _200x5_SHS: SHS_base = field(metadata={'alias': '200x5 SHS'})
+    _150x9_SHS: SHS_base = field(metadata={'alias': '150x9 SHS'})
+    _150x6_SHS: SHS_base = field(metadata={'alias': '150x6 SHS'})
+    _150x5_SHS: SHS_base = field(metadata={'alias': '150x5 SHS'})
+    _125x9_SHS: SHS_base = field(metadata={'alias': '125x9 SHS'})
+    _125x6_SHS: SHS_base = field(metadata={'alias': '125x6 SHS'})
+    _125x5_SHS: SHS_base = field(metadata={'alias': '125x5 SHS'})
+    _125x4_SHS: SHS_base = field(metadata={'alias': '125x4 SHS'})
+    _100x9_SHS: SHS_base = field(metadata={'alias': '100x9 SHS'})
+    _100x6_SHS: SHS_base = field(metadata={'alias': '100x6 SHS'})
+    _100x5_SHS: SHS_base = field(metadata={'alias': '100x5 SHS'})
+    _100x4_SHS: SHS_base = field(metadata={'alias': '100x4 SHS'})
+    _100x3_SHS: SHS_base = field(metadata={'alias': '100x3 SHS'})
+    _100x2_5_SHS: SHS_base = field(metadata={'alias': '100x2.5 SHS'})
+    _100x2_SHS: SHS_base = field(metadata={'alias': '100x2 SHS'})
+    _89x6_SHS: SHS_base = field(metadata={'alias': '89x6 SHS'})
+    _89x5_SHS: SHS_base = field(metadata={'alias': '89x5 SHS'})
+    _89x3_5_SHS: SHS_base = field(metadata={'alias': '89x3.5 SHS'})
+    _75x6_SHS: SHS_base = field(metadata={'alias': '75x6 SHS'})
+    _75x5_SHS: SHS_base = field(metadata={'alias': '75x5 SHS'})
+    _75x4_SHS: SHS_base = field(metadata={'alias': '75x4 SHS'})
+    _75x3_5_SHS: SHS_base = field(metadata={'alias': '75x3.5 SHS'})
+    _75x3_SHS: SHS_base = field(metadata={'alias': '75x3 SHS'})
+    _75x2_5_SHS: SHS_base = field(metadata={'alias': '75x2.5 SHS'})
+    _75x2_SHS: SHS_base = field(metadata={'alias': '75x2 SHS'})
+    _65x6_SHS: SHS_base = field(metadata={'alias': '65x6 SHS'})
+    _65x5_SHS: SHS_base = field(metadata={'alias': '65x5 SHS'})
+    _65x4_SHS: SHS_base = field(metadata={'alias': '65x4 SHS'})
+    _65x3_SHS: SHS_base = field(metadata={'alias': '65x3 SHS'})
+    _65x2_5_SHS: SHS_base = field(metadata={'alias': '65x2.5 SHS'})
+    _65x2_SHS: SHS_base = field(metadata={'alias': '65x2 SHS'})
+    _65x1_6_SHS: SHS_base = field(metadata={'alias': '65x1.6 SHS'})
+    _50x5_SHS: SHS_base = field(metadata={'alias': '50x5 SHS'})
+    _50x4_SHS: SHS_base = field(metadata={'alias': '50x4 SHS'})
+    _50x3_SHS: SHS_base = field(metadata={'alias': '50x3 SHS'})
+    _50x2_5_SHS: SHS_base = field(metadata={'alias': '50x2.5 SHS'})
+    _50x2_SHS: SHS_base = field(metadata={'alias': '50x2 SHS'})
+    _50x1_6_SHS: SHS_base = field(metadata={'alias': '50x1.6 SHS'})
+    _40x4_SHS: SHS_base = field(metadata={'alias': '40x4 SHS'})
+    _40x3_SHS: SHS_base = field(metadata={'alias': '40x3 SHS'})
+    _40x2_5_SHS: SHS_base = field(metadata={'alias': '40x2.5 SHS'})
+    _40x2_SHS: SHS_base = field(metadata={'alias': '40x2 SHS'})
+    _40x1_6_SHS: SHS_base = field(metadata={'alias': '40x1.6 SHS'})
+    _35x3_SHS: SHS_base = field(metadata={'alias': '35x3 SHS'})
+    _35x2_5_SHS: SHS_base = field(metadata={'alias': '35x2.5 SHS'})
+    _35x2_SHS: SHS_base = field(metadata={'alias': '35x2 SHS'})
+    _35x1_6_SHS: SHS_base = field(metadata={'alias': '35x1.6 SHS'})
+    _30x2_SHS: SHS_base = field(metadata={'alias': '30x2 SHS'})
+    _30x1_6_SHS: SHS_base = field(metadata={'alias': '30x1.6 SHS'})
+    _25x3_SHS: SHS_base = field(metadata={'alias': '25x3 SHS'})
+    _25x2_5_SHS: SHS_base = field(metadata={'alias': '25x2.5 SHS'})
+    _25x2_SHS: SHS_base = field(metadata={'alias': '25x2 SHS'})
+    _25x1_6_SHS: SHS_base = field(metadata={'alias': '25x1.6 SHS'})
+    _20x1_6_SHS: SHS_base = field(metadata={'alias': '20x1.6 SHS'})
 
-class SHS(BaseModel):
-    _250x9SHS: SHS_base
-    _250x6SHS: SHS_base
-    _200x9SHS: SHS_base
-    _200x6SHS: SHS_base
-    _200x5SHS: SHS_base
-    _150x9SHS: SHS_base
-    _150x6SHS: SHS_base
-    _150x5SHS: SHS_base
-    _125x9SHS: SHS_base
-    _125x6SHS: SHS_base
-    _125x5SHS: SHS_base
-    _125x4SHS: SHS_base
-    _100x9SHS: SHS_base
-    _100x6SHS: SHS_base
-    _100x5SHS: SHS_base
-    _100x4SHS: SHS_base
-    _100x3SHS: SHS_base
-    _100x2_5SHS: SHS_base = Field(alias='_100x2.5SHS')
-    _100x2SHS: SHS_base
-    _89x6SHS: SHS_base
-    _89x5SHS: SHS_base
-    _89x3_5SHS: SHS_base = Field(alias='_89x3.5SHS')
-    _75x6SHS: SHS_base
-    _75x5SHS: SHS_base
-    _75x4SHS: SHS_base
-    _75x3_5SHS: SHS_base = Field(alias='_75x3.5SHS')
-    _75x3SHS: SHS_base
-    _75x2_5SHS: SHS_base = Field(alias='_75x2.5SHS')
-    _75x2SHS: SHS_base
-    _65x6SHS: SHS_base
-    _65x5SHS: SHS_base
-    _65x4SHS: SHS_base
-    _65x3SHS: SHS_base
-    _65x2_5SHS: SHS_base = Field(alias='_65x2.5SHS')
-    _65x2SHS: SHS_base
-    _65x1_6SHS: SHS_base = Field(alias='_65x1.6SHS')
-    _50x5SHS: SHS_base
-    _50x4SHS: SHS_base
-    _50x3SHS: SHS_base
-    _50x2_5SHS: SHS_base = Field(alias='_50x2.5SHS')
-    _50x2SHS: SHS_base
-    _50x1_6SHS: SHS_base = Field(alias='_50x1.6SHS')
-    _40x4SHS: SHS_base
-    _40x3SHS: SHS_base
-    _40x2_5SHS: SHS_base = Field(alias='_40x2.5SHS')
-    _40x2SHS: SHS_base
-    _40x1_6SHS: SHS_base = Field(alias='_40x1.6SHS')
-    _35x3SHS: SHS_base
-    _35x2_5SHS: SHS_base = Field(alias='_35x2.5SHS')
-    _35x2SHS: SHS_base
-    _35x1_6SHS: SHS_base = Field(alias='_35x1.6SHS')
-    _30x2SHS: SHS_base
-    _30x1_6SHS: SHS_base = Field(alias='_30x1.6SHS')
-    _25x3SHS: SHS_base
-    _25x2_5SHS: SHS_base = Field(alias='_25x2.5SHS')
-    _25x2SHS: SHS_base
-    _25x1_6SHS: SHS_base = Field(alias='_25x1.6SHS')
-    _20x1_6SHS: SHS_base = Field(alias='_20x1.6SHS')
- 
     def __iter__(self):
         yield from self.__dict__.values()
-

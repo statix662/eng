@@ -1,5 +1,5 @@
 {
-    "_250x9SHS": {
+    "250x9 SHS": {
         "name": "250x9 SHS",
         "weight": 65.9,
         "d": 250.0,
@@ -23,7 +23,7 @@
         "compact_y": "N",
         "Zey": 744000.0
     },
-    "_250x6SHS": {
+    "250x6 SHS": {
         "name": "250x6 SHS",
         "weight": 45.0,
         "d": 250.0,
@@ -47,7 +47,7 @@
         "compact_y": "S",
         "Zey": 409000.0
     },
-    "_200x9SHS": {
+    "200x9 SHS": {
         "name": "200x9 SHS",
         "weight": 51.8,
         "d": 200.0,
@@ -71,7 +71,7 @@
         "compact_y": "C",
         "Zey": 465000.0
     },
-    "_200x6SHS": {
+    "200x6 SHS": {
         "name": "200x6 SHS",
         "weight": 35.6,
         "d": 200.0,
@@ -95,7 +95,7 @@
         "compact_y": "N",
         "Zey": 294000.0
     },
-    "_200x5SHS": {
+    "200x5 SHS": {
         "name": "200x5 SHS",
         "weight": 29.9,
         "d": 200.0,
@@ -119,7 +119,7 @@
         "compact_y": "S",
         "Zey": 223000.0
     },
-    "_150x9SHS": {
+    "150x9 SHS": {
         "name": "150x9 SHS",
         "weight": 37.7,
         "d": 150.0,
@@ -143,7 +143,7 @@
         "compact_y": "C",
         "Zey": 248000.0
     },
-    "_150x6SHS": {
+    "150x6 SHS": {
         "name": "150x6 SHS",
         "weight": 26.2,
         "d": 150.0,
@@ -167,7 +167,7 @@
         "compact_y": "C",
         "Zey": 178000.0
     },
-    "_150x5SHS": {
+    "150x5 SHS": {
         "name": "150x5 SHS",
         "weight": 22.1,
         "d": 150.0,
@@ -191,7 +191,7 @@
         "compact_y": "N",
         "Zey": 144000.0
     },
-    "_125x9SHS": {
+    "125x9 SHS": {
         "name": "125x9 SHS",
         "weight": 30.6,
         "d": 125.0,
@@ -215,7 +215,7 @@
         "compact_y": "C",
         "Zey": 165000.0
     },
-    "_125x6SHS": {
+    "125x6 SHS": {
         "name": "125x6 SHS",
         "weight": 21.4,
         "d": 125.0,
@@ -239,7 +239,7 @@
         "compact_y": "C",
         "Zey": 120000.0
     },
-    "_125x5SHS": {
+    "125x5 SHS": {
         "name": "125x5 SHS",
         "weight": 18.2,
         "d": 125.0,
@@ -263,7 +263,7 @@
         "compact_y": "C",
         "Zey": 103000.0
     },
-    "_125x4SHS": {
+    "125x4 SHS": {
         "name": "125x4 SHS",
         "weight": 14.8,
         "d": 125.0,
@@ -287,7 +287,7 @@
         "compact_y": "N",
         "Zey": 78900.0
     },
-    "_100x9SHS": {
+    "100x9 SHS": {
         "name": "100x9 SHS",
         "weight": 23.5,
         "d": 100.0,
@@ -311,7 +311,7 @@
         "compact_y": "C",
         "Zey": 98600.0
     },
-    "_100x6SHS": {
+    "100x6 SHS": {
         "name": "100x6 SHS",
         "weight": 16.7,
         "d": 100.0,
@@ -335,7 +335,7 @@
         "compact_y": "C",
         "Zey": 73500.0
     },
-    "_100x5SHS": {
+    "100x5 SHS": {
         "name": "100x5 SHS",
         "weight": 14.2,
         "d": 100.0,
@@ -359,7 +359,7 @@
         "compact_y": "C",
         "Zey": 63500.0
     },
-    "_100x4SHS": {
+    "100x4 SHS": {
         "name": "100x4 SHS",
         "weight": 11.6,
         "d": 100.0,
@@ -383,7 +383,7 @@
         "compact_y": "C",
         "Zey": 52600.0
     },
-    "_100x3SHS": {
+    "100x3 SHS": {
         "name": "100x3 SHS",
         "weight": 8.96,
         "d": 100.0,
@@ -407,7 +407,7 @@
         "compact_y": "N",
         "Zey": 37100.0
     },
-    "_100x2.5SHS": {
+    "100x2.5 SHS": {
         "name": "100x2.5 SHS",
         "weight": 7.53,
         "d": 100.0,
@@ -431,7 +431,7 @@
         "compact_y": "S",
         "Zey": 28100.0
     },
-    "_100x2SHS": {
+    "100x2 SHS": {
         "name": "100x2 SHS",
         "weight": 6.07,
         "d": 100.0,
@@ -455,7 +455,7 @@
         "compact_y": "S",
         "Zey": 20200.0
     },
-    "_89x6SHS": {
+    "89x6 SHS": {
         "name": "89x6 SHS",
         "weight": 14.6,
         "d": 89.0,
@@ -479,7 +479,7 @@
         "compact_y": "C",
         "Zey": 56600.0
     },
-    "_89x5SHS": {
+    "89x5 SHS": {
         "name": "89x5 SHS",
         "weight": 12.5,
         "d": 89.0,
@@ -503,7 +503,7 @@
         "compact_y": "C",
         "Zey": 49100.0
     },
-    "_89x3.5SHS": {
+    "89x3.5 SHS": {
         "name": "89x3.5 SHS",
         "weight": 9.06,
         "d": 89.0,
@@ -527,7 +527,7 @@
         "compact_y": "C",
         "Zey": 36500.0
     },
-    "_75x6SHS": {
+    "75x6 SHS": {
         "name": "75x6 SHS",
         "weight": 12.0,
         "d": 75.0,
@@ -551,7 +551,7 @@
         "compact_y": "C",
         "Zey": 38400.0
     },
-    "_75x5SHS": {
+    "75x5 SHS": {
         "name": "75x5 SHS",
         "weight": 10.3,
         "d": 75.0,
@@ -575,7 +575,7 @@
         "compact_y": "C",
         "Zey": 33600.0
     },
-    "_75x4SHS": {
+    "75x4 SHS": {
         "name": "75x4 SHS",
         "weight": 8.49,
         "d": 75.0,
@@ -599,7 +599,7 @@
         "compact_y": "C",
         "Zey": 28200.0
     },
-    "_75x3.5SHS": {
+    "75x3.5 SHS": {
         "name": "75x3.5 SHS",
         "weight": 7.53,
         "d": 75.0,
@@ -623,7 +623,7 @@
         "compact_y": "C",
         "Zey": 25300.0
     },
-    "_75x3SHS": {
+    "75x3 SHS": {
         "name": "75x3 SHS",
         "weight": 6.6,
         "d": 75.0,
@@ -647,7 +647,7 @@
         "compact_y": "C",
         "Zey": 22500.0
     },
-    "_75x2.5SHS": {
+    "75x2.5 SHS": {
         "name": "75x2.5 SHS",
         "weight": 5.56,
         "d": 75.0,
@@ -671,7 +671,7 @@
         "compact_y": "N",
         "Zey": 18300.0
     },
-    "_75x2SHS": {
+    "75x2 SHS": {
         "name": "75x2 SHS",
         "weight": 4.5,
         "d": 75.0,
@@ -695,7 +695,7 @@
         "compact_y": "S",
         "Zey": 13100.0
     },
-    "_65x6SHS": {
+    "65x6 SHS": {
         "name": "65x6 SHS",
         "weight": 10.1,
         "d": 65.0,
@@ -719,7 +719,7 @@
         "compact_y": "C",
         "Zey": 27500.0
     },
-    "_65x5SHS": {
+    "65x5 SHS": {
         "name": "65x5 SHS",
         "weight": 8.75,
         "d": 65.0,
@@ -743,7 +743,7 @@
         "compact_y": "C",
         "Zey": 24300.0
     },
-    "_65x4SHS": {
+    "65x4 SHS": {
         "name": "65x4 SHS",
         "weight": 7.23,
         "d": 65.0,
@@ -767,7 +767,7 @@
         "compact_y": "C",
         "Zey": 20600.0
     },
-    "_65x3SHS": {
+    "65x3 SHS": {
         "name": "65x3 SHS",
         "weight": 5.66,
         "d": 65.0,
@@ -791,7 +791,7 @@
         "compact_y": "C",
         "Zey": 16600.0
     },
-    "_65x2.5SHS": {
+    "65x2.5 SHS": {
         "name": "65x2.5 SHS",
         "weight": 4.78,
         "d": 65.0,
@@ -815,7 +815,7 @@
         "compact_y": "C",
         "Zey": 14100.0
     },
-    "_65x2SHS": {
+    "65x2 SHS": {
         "name": "65x2 SHS",
         "weight": 3.88,
         "d": 65.0,
@@ -839,7 +839,7 @@
         "compact_y": "N",
         "Zey": 10600.0
     },
-    "_65x1.6SHS": {
+    "65x1.6 SHS": {
         "name": "65x1.6 SHS",
         "weight": 3.13,
         "d": 65.0,
@@ -863,7 +863,7 @@
         "compact_y": "S",
         "Zey": 7540.0
     },
-    "_50x5SHS": {
+    "50x5 SHS": {
         "name": "50x5 SHS",
         "weight": 6.39,
         "d": 50.0,
@@ -887,7 +887,7 @@
         "compact_y": "C",
         "Zey": 13200.0
     },
-    "_50x4SHS": {
+    "50x4 SHS": {
         "name": "50x4 SHS",
         "weight": 5.35,
         "d": 50.0,
@@ -911,7 +911,7 @@
         "compact_y": "C",
         "Zey": 11400.0
     },
-    "_50x3SHS": {
+    "50x3 SHS": {
         "name": "50x3 SHS",
         "weight": 4.25,
         "d": 50.0,
@@ -935,7 +935,7 @@
         "compact_y": "C",
         "Zey": 9390.0
     },
-    "_50x2.5SHS": {
+    "50x2.5 SHS": {
         "name": "50x2.5 SHS",
         "weight": 3.6,
         "d": 50.0,
@@ -959,7 +959,7 @@
         "compact_y": "C",
         "Zey": 8070.0
     },
-    "_50x2SHS": {
+    "50x2 SHS": {
         "name": "50x2 SHS",
         "weight": 2.93,
         "d": 50.0,
@@ -983,7 +983,7 @@
         "compact_y": "C",
         "Zey": 6660.0
     },
-    "_50x1.6SHS": {
+    "50x1.6 SHS": {
         "name": "50x1.6 SHS",
         "weight": 2.38,
         "d": 50.0,
@@ -1007,7 +1007,7 @@
         "compact_y": "N",
         "Zey": 5100.0
     },
-    "_40x4SHS": {
+    "40x4 SHS": {
         "name": "40x4 SHS",
         "weight": 4.09,
         "d": 40.0,
@@ -1031,7 +1031,7 @@
         "compact_y": "C",
         "Zey": 6740.0
     },
-    "_40x3SHS": {
+    "40x3 SHS": {
         "name": "40x3 SHS",
         "weight": 3.3,
         "d": 40.0,
@@ -1055,7 +1055,7 @@
         "compact_y": "C",
         "Zey": 5720.0
     },
-    "_40x2.5SHS": {
+    "40x2.5 SHS": {
         "name": "40x2.5 SHS",
         "weight": 2.82,
         "d": 40.0,
@@ -1079,7 +1079,7 @@
         "compact_y": "C",
         "Zey": 4970.0
     },
-    "_40x2SHS": {
+    "40x2 SHS": {
         "name": "40x2 SHS",
         "weight": 2.31,
         "d": 40.0,
@@ -1103,7 +1103,7 @@
         "compact_y": "C",
         "Zey": 4130.0
     },
-    "_40x1.6SHS": {
+    "40x1.6 SHS": {
         "name": "40x1.6 SHS",
         "weight": 1.88,
         "d": 40.0,
@@ -1127,7 +1127,7 @@
         "compact_y": "C",
         "Zey": 3410.0
     },
-    "_35x3SHS": {
+    "35x3 SHS": {
         "name": "35x3 SHS",
         "weight": 2.83,
         "d": 35.0,
@@ -1151,7 +1151,7 @@
         "compact_y": "C",
         "Zey": 4230.0
     },
-    "_35x2.5SHS": {
+    "35x2.5 SHS": {
         "name": "35x2.5 SHS",
         "weight": 2.42,
         "d": 35.0,
@@ -1175,7 +1175,7 @@
         "compact_y": "C",
         "Zey": 3690.0
     },
-    "_35x2SHS": {
+    "35x2 SHS": {
         "name": "35x2 SHS",
         "weight": 1.99,
         "d": 35.0,
@@ -1199,7 +1199,7 @@
         "compact_y": "C",
         "Zey": 3090.0
     },
-    "_35x1.6SHS": {
+    "35x1.6 SHS": {
         "name": "35x1.6 SHS",
         "weight": 1.63,
         "d": 35.0,
@@ -1223,7 +1223,7 @@
         "compact_y": "C",
         "Zey": 2570.0
     },
-    "_30x2SHS": {
+    "30x2 SHS": {
         "name": "30x2 SHS",
         "weight": 1.68,
         "d": 30.0,
@@ -1247,7 +1247,7 @@
         "compact_y": "C",
         "Zey": 2210.0
     },
-    "_30x1.6SHS": {
+    "30x1.6 SHS": {
         "name": "30x1.6 SHS",
         "weight": 1.38,
         "d": 30.0,
@@ -1271,7 +1271,7 @@
         "compact_y": "C",
         "Zey": 1840.0
     },
-    "_25x3SHS": {
+    "25x3 SHS": {
         "name": "25x3 SHS",
         "weight": 1.89,
         "d": 25.0,
@@ -1295,7 +1295,7 @@
         "compact_y": "C",
         "Zey": 1910.0
     },
-    "_25x2.5SHS": {
+    "25x2.5 SHS": {
         "name": "25x2.5 SHS",
         "weight": 1.64,
         "d": 25.0,
@@ -1319,7 +1319,7 @@
         "compact_y": "C",
         "Zey": 1710.0
     },
-    "_25x2SHS": {
+    "25x2 SHS": {
         "name": "25x2 SHS",
         "weight": 1.36,
         "d": 25.0,
@@ -1343,7 +1343,7 @@
         "compact_y": "C",
         "Zey": 1470.0
     },
-    "_25x1.6SHS": {
+    "25x1.6 SHS": {
         "name": "25x1.6 SHS",
         "weight": 1.12,
         "d": 25.0,
@@ -1367,7 +1367,7 @@
         "compact_y": "C",
         "Zey": 1240.0
     },
-    "_20x1.6SHS": {
+    "20x1.6 SHS": {
         "name": "20x1.6 SHS",
         "weight": 0.873,
         "d": 20.0,
