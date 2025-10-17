@@ -11,12 +11,12 @@ from .WC import WC as WC_wrapper
 
 _data_path = Path(__file__).parent / "data"
 
-CHS = load_data(_data_path / "CHS.json", CHS_wrapper)
-PFC = load_data(_data_path / "PFC.json", PFC_wrapper)
-SHS = load_data(_data_path / "SHS.json", SHS_wrapper)
-UB = load_data(_data_path / "UB.json", UB_wrapper)
-UC = load_data(_data_path / "UC.json", UC_wrapper)
-WB = load_data(_data_path / "WB.json", WB_wrapper)
-WC = load_data(_data_path / "WC.json", WC_wrapper)
+CHS: CHS_wrapper = load_data(_data_path / "CHS.json", CHS_wrapper)
+PFC: PFC_wrapper = load_data(_data_path / "PFC.json", PFC_wrapper)
+SHS: SHS_wrapper = load_data(_data_path / "SHS.json", SHS_wrapper)
+UB: UB_wrapper = load_data(_data_path / "UB.json", UB_wrapper)
+UC: UC_wrapper = load_data(_data_path / "UC.json", UC_wrapper)
+WB: WB_wrapper = load_data(_data_path / "WB.json", WB_wrapper)
+WC: WC_wrapper = load_data(_data_path / "WC.json", WC_wrapper)
 
 __all__ = ['CHS', 'PFC', 'SHS', 'UB', 'UC', 'WB', 'WC']

@@ -186,7 +186,7 @@ def generate_module_init(module_path, section_names):
     lines.append("\n_data_path = Path(__file__).parent / \"data\"\n")
     
     for name in sorted_names:
-        lines.append(f"{name} = load_data(_data_path / \"{name}.json\", {name}_wrapper)")
+        lines.append(f"{name}: {name}_wrapper = load_data(_data_path / \"{name}.json\", {name}_wrapper)")
         
     lines.append(f"\n__all__ = {repr(sorted_names)}")
 
